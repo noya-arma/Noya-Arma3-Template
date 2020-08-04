@@ -1,0 +1,29 @@
+
+author			= "NoYa";
+onLoadName		= "NY MCC mission template";
+onLoadMission	= "Have a good time";
+
+allowFunctionsLog = 1;
+
+class Header
+{
+	gameType =  Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 40;	// maximum number of players the mission supports
+};
+
+respawn  =  "BASE" ; 
+respawnTemplates[]  =  { "MenuPosition" };
+respawnDelay = 1;
+
+DisabledAI = 1;
+respawnOnStart = 0;
+
+//--------------------------------------------------------------
+//------------------------AIS INJURY----------------------------
+//--------------------------------------------------------------
+class CfgFunctions {
+	#include "AIS\cfgFunctions.hpp"
+};
+#include "AIS\Effects\BarDlg.hpp"
+//--------------------------------------------------------------
