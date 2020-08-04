@@ -30,6 +30,6 @@ player addEventHandler ["Respawn", {
 		"_this distance markerPos 'fobMarker' < 32",
 		0
 	];
-	
-
 }];
+
+player setVehicleReportRemoteTargets true;
